@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Portifólio</a>
+        <a href="#" class="logo">Portfólio</a>
 
         <i class='bx bx-menu' id="menu-icon"></i>
 
@@ -28,8 +28,8 @@
         <div class="home-content">
             <h3>Olá, eu sou</h3>
             <h1>David Carvalho</h1>
-            <h3>e sou <span>Programador Frontend!</span></h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae reprehenderit suscipit quidem itaque libero iusto, sequi architecto quas porro nesciunt ex quam excepturi voluptates. Doloremque voluptatibus perspiciatis explicabo dolorem veniam.
+            <h3>e sou <span class="multiple-text"></span></h3>
+            <p>Formado em Análise e Desenvolvimento de Sistemas, entusiasta de tecnologia, curioso e analítico, busco aumentar cada vez mais meus conhecimentos no mundo do desenvolvimento, sempre estudando e criando novos projetos para por em prática tudo que vou aprendendo e acompanhando minha evolução a cada novo desafio.
             </p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-linkedin' ></i></a>
@@ -52,8 +52,13 @@
         <div class="about-content">
             <h2 class="heading">Sobre <span>mim</span></h2> 
             <h3>Desenvolvedor Frontend</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, optio! At, laudantium, vitae asperiores sit pariatur quaerat saepe est, repellat maiores inventore eaque sunt exercitationem. Recusandae, maxime? Vel praesentium ex consectetur deserunt dolores facere nobis in, saepe eius eum voluptas ipsa nesciunt sequi, eaque repellendus quisquam quia possimus officia error? Odit rem sit voluptatibus aliquid ut inventore error eius facere, nemo possimus fugiat laboriosam. Enim obcaecati consequuntur delectus, tempora beatae numquam modi tenetur officia atque cupiditate culpa fugiat blanditiis ipsam?</p>   
-            <a href="#" class="btn">Saiba Mais</a>
+            <p>Apaixonado por tecnologia, desde que iniciei minha carreira profissional, sempre trabalhei na área. No início, trabalhei com suporte técnico por alguns anos, onde tive o desejo de me aprofundar e buscar mais conhecimento.</p>
+            <p>Iniciando então o curso de Análise e Desenvolvimento de Sistemas.
+                Passei por algumas áreas na tecnologia, como Analista de suporte, Analista de NOC (Network Operation Center) e então decidi direcionar meus estudos e minha carreira ao desenvolvimento.
+                Desde então, tenho projetado todos os estudos e certificados no que se refere ao desenvolvimento web. Participando de eventos e cursos buscando minha primeira vaga como Desenvolvedor.
+            </p>   
+            <a href="https://www.linkedin.com/in/odavid-carvalho/" target="_blank" class="btn">Linkedin</a>
+            <a href="https://github.com/DavidRSCarvalho" target="_blank" class="btn">GitHub</a>
         </div>
     </section>
 
@@ -65,15 +70,15 @@
             <div class="services-box">
               <i class='bx bx-code-alt'></i>  
               <h3>Desenvolvedor Web</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum odit commodi odio repudiandae consectetur dolor at assumenda laboriosam voluptas.</p>
-              <a href="#" class="btn">Ler mais</a>
+              <p>Programador Frontend com alguns projetos buscando a tão sonhada primeira vaga como programador.</p>
+              <a href="https://www.linkedin.com/in/odavid-carvalho/" class="btn">Saiba mais</a>
             </div>
 
             <div class="services-box">
                 <i class='bx bxl-adobe'></i>  
                 <h3>Pacote Adobe</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dolorum odit commodi odio repudiandae consectetur dolor at assumenda laboriosam voluptas.</p>
-                <a href="#" class="btn">Ler mais</a>
+                <p>Possuo conhecimentos intermediários em algumas ferramentas do pacote Adobe, como Illustrator e Photoshop agregando nos projetos.</p>
+                <a href="https://www.linkedin.com/in/odavid-carvalho/" class="btn">Saiba mais</a>
               </div>
         </div>
     </section>
@@ -142,18 +147,23 @@
     <section class="contact" id="contact">
         <h2 class="heading">Meus <span>Contatos</span></h2>
         
-        <form action="#">
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            
             <div class="input-box">
-                <input type="text" placeholder="Nome completo">
-                <input type="email" placeholder="E-mail">
+                <input type="hidden" name="accessKey" value="41c2cdc5-eff1-43b4-a4f0-858a31ae3a36">
+                
+                <input type="text" name="name" placeholder="Nome completo">
+                <input type="email" name="email" placeholder="E-mail">
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="DDD+Número">
-                <input type="text" placeholder="E-mail Secundário">
+                <input type="number" name="phone" placeholder="DDD+Número">
+                <input type="text" name="email" placeholder="E-mail alternativo">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
+          
             <input type="submit" value="Enviar Mensagem" class="btn">
+            <input type="hidden" name="redirectTo" value="https://landingpagedavidcarvalho.netlify.app">
             
         </form>
     </section>
@@ -163,10 +173,13 @@
             <p>Criado por David Carvalho &copy;| Todos os Direitos Reservados</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home"<i class='bx bx-chevrons-up'></i></a>
+            <a href="#home" <i class='bx bx-chevrons-up'></i></a>
         </div>
     </footer>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
     <script src="js/script.js"></script>
 </body>
