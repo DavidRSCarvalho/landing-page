@@ -11,10 +11,10 @@
 }
 
 :root {
-  --bg-color: #1f242d;
-  --second-bg-color: #323946;
+  --bg-color: #000000;
+  --second-bg-color: #000111;
   --text-color: #fff;
-  --main-color: #0ef;
+  --main-color:#00FFFF;
 }
 html {
   font-size: 62.5%;
@@ -147,7 +147,8 @@ span {
   background: var(--second-bg-color);
 }
 
-.about-img ,img {
+.about-img,
+img {
   width: 35vw;
 }
 .heading {
@@ -302,7 +303,9 @@ span {
 .contact form .btn {
   margin-top: 2rem;
   cursor: pointer;
+  
 }
+
 .footer {
   display: flex;
   justify-content: space-between;
